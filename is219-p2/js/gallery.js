@@ -51,9 +51,9 @@ function swapPhoto() {
   document.getElementById('photo').src = mImages[mCurrentIndex].img;
 	console.log('swap photo');
   var loc = document.getElementsByClassName('location');
-  loc[0].innerHTML = "Location: " + mImages[mCurrentIndex].location;
-  var des = document.getElementsByClassName('descirption');
-  des[0].innerHTML = "Description: " + mImages[mCurrentIndex].description;
+  loc[0].innerHTML = "Location: " + mImages[mCurrentIndex].local;
+  var des = document.getElementsByClassName('description');
+  des[0].innerHTML = "Description: " + mImages[mCurrentIndex].desc;
   var date = document.getElementsByClassName('date');
   date[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
 
@@ -94,7 +94,7 @@ function iterateJson () {
   for(i = 0; i < mJson.images.length; i++){
     mImages[i] = new GalleryImage();
     mImages[i].local = mJson.images[i].imgLocation;
-    mImages[i].description = mJson.images[i].description;
+    mImages[i].desc = mJson.images[i].description;
     mImages[i].date = mJson.images[i].date;
     mImages[i].img = mJson.images[i].imgPath;
   }
@@ -126,7 +126,7 @@ function GalleryImage() {
 	//1. location where photo was taken
   var local;
 	//2. description of photo
-  var description;
+  var desc;
 	//3. the date when the photo was taken
   var date;
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
