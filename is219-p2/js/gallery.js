@@ -94,8 +94,8 @@ function iterateJson () {
   for(i = 0; i < mJson.images.length; i++){
     mImages[i] = new GalleryImage();
     mImages[i].local = mJson.images[i].imgLocation;
-    mImages[i].description = mJson.images[i].imgDescription;
-    mImages[i].date = mJson.images[i].imgDate;
+    mImages[i].description = mJson.images[i].description;
+    mImages[i].date = mJson.images[i].date;
     mImages[i].img = mJson.images[i].imgPath;
   }
 }
