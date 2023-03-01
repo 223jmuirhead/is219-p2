@@ -62,6 +62,11 @@ body {
 	width: 42px;
 }
 
+#photo {
+	height: 390.5px;
+	width: 520px;
+}
+
 .details p {
 	margin-top: 20px;
 }
