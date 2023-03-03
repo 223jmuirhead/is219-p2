@@ -133,4 +133,19 @@ function GalleryImage() {
   var img;
 }
 
+
+document.getElementsById("mInd").addEventListener("click", rotate());
+
+function rotate() {
+  console.log("classSwap");
+  if($(".moreIndicator").hasClass("rot90")){
+    $(".moreIndicator").removeClass("rot90");
+    $(".moreIndicator").addClass("rot270");
+
+  } else {
+    $(".moreIndicator").removeClass("rot270");
+    $(".moreIndicator").addClass("rot90");
+  }
+}
+
 //stopped at step 2.5
