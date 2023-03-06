@@ -1,0 +1,48 @@
+{
+    "images": [
+        {
+            "imgPath": "img/places/montain.jpg",
+            "imgLocation": "Romania",
+            "description": "Carpathian Mountains",
+            "date": "01/01/2016"
+        },
+        {
+            "imgPath": "img/places/moon.jpg",
+            "imgLocation": "The Moon",
+            "description": "123 Moon Street",
+            "date": "12/21/2112"
+        },
+        {
+            "imgPath": "img/places/ocean.jpg",
+            "imgLocation": "Ocean",
+            "description": "Lot's of water out here",
+            "date": "01/03/2016"
+        },
+        {
+            "imgPath": "img/places/desert.jpg",
+            "imgLocation": "Desert",
+            "description": "Lot's of sand out here",
+            "date": "01/04/2016"
+        },
+        {
+            "imgPath": "img/places/rocks.jpg",
+            "imgLocation": "Rockland",
+            "description": "12 Rock Lane, Home of the Rocks",
+            "date": "01/05/2256"
+        },
+
+        {
+            "imgPath": "img/places/Spahetti.jpg",
+            "imgLocation": "Italy",
+            "description": "The Spaghetti Hills of Italy, where spaghetti is farmed.",
+            "date": "02/25/1002"
+        },
+         
+        {
+            "imgPath": "img/places/flavor.jpg",
+            "imgLocation": "USA",
+            "description": "FlavorTown",
+            "date": "01/05/2016"
+        }
+  ]
+}

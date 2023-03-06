@@ -29,7 +29,6 @@ body {
 	width: 50px;
 	position: absolute;
 	z-index: 3;
-	opacity: .8;
 	top: 400px;
 	left: 45%;
 }
@@ -55,11 +54,22 @@ body {
 #prevPhoto {
 	height: 42px;
 	width: 42px;
+	transition: all .5s ease;
+}
+
+#prevPhoto:hover {
+	opacity: 80%;
 }
 
 #nextPhoto {
 	height: 42px;
 	width: 42px;
+	transition: all .5s ease;
+	margin-left: 86%;
+}
+
+#nextPhoto:hover {
+	opacity: 80%;
 }
 
 #photo {
@@ -67,9 +77,6 @@ body {
 	width: 520px;
 }
 
-#mInd{
-	
-}
 
 .details p {
 	margin-top: 20px;

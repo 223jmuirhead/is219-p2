@@ -75,7 +75,7 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = "images.json";
+var mUrl = "extra.json";
 
 //Function to get info from the json folder 
 function getJson () {
@@ -89,6 +89,7 @@ function getJson () {
   mRequest.open("GET", mUrl, true);
   mRequest.send();
 }
+
 
 function iterateJson () {
   for(i = 0; i < mJson.images.length; i++){
@@ -112,9 +113,10 @@ $(document).ready( function() {
 	getJson();
 	// This initially hides the photos' metadata information
 	// $('.details').eq(0).hide();
-	
+
 });
 
+//logs console when window is loaded
 window.addEventListener('load', function() {
 	
 	console.log('window loaded');
@@ -134,18 +136,7 @@ function GalleryImage() {
 }
 
 
-document.getElementsById("mInd").addEventListener("click", rotate());
 
-function rotate() {
-  console.log("classSwap");
-  if($(".moreIndicator").hasClass("rot90")){
-    $(".moreIndicator").removeClass("rot90");
-    $(".moreIndicator").addClass("rot270");
 
-  } else {
-    $(".moreIndicator").removeClass("rot270");
-    $(".moreIndicator").addClass("rot90");
-  }
-}
 
-//stopped at step 2.5
+

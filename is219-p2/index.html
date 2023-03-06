@@ -14,7 +14,7 @@
     <div id="slideShow">
       <div class="photoHolder">
         <img class="thumbnail" id="photo" src="http://placehold.it/518x389?text=Welcome+to+my+Gallery" alt="Gallery Image"/>
-        <img class="moreIndicator rot90" id="mInd" src="img/more.png" alt="More Content"/>
+        <img class="moreIndicator rot90" id="mInd" src="img/more.png" alt="More Content" onClick="toggleDetails"/>
       </div>
       <div id="nav">
         <img id="prevPhoto" class='rot180' src="img/arrow.png" alt="Previous Photo"/>
@@ -28,5 +28,31 @@
 
     </div>
   </div>
+  <script>
+    $( "#prevPhoto").click(function() {
+      mCurrentIndex -= 2;
+      swapPhoto();
+    });
+  </script>
+
+<script>
+  $( "#nextPhoto" ).click(function() {
+    swapPhoto();
+  });
+</script>
+<script>
+ $( "#mInd" ).click(function() {
+  if($(".moreIndicator").hasClass("rot90"))
+  {
+    $( ".moreIndicator" ).removeClass("rot90");
+    $(".moreIndicator").addClass("rot270");
+  }
+  else {
+    $(".moreIndicator").removeClass("rot270");
+    $(".moreIndicator").addClass("rot90");
+  }
+  $(".details").slideToggle("slow", "linear");
+ });
+</script>
 </body>
 </html>
